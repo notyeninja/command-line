@@ -27,3 +27,22 @@ To quit:
   * git stash --include-untracked
 * keep all even ignored ones
   * git stash --all
+* name stashes for easy reference
+  * git stash save "some easy reference here"
+* start new branch from stash
+  * git stash branch {branch name}
+* grab single file from stash.
+  If you have a same file in your working area and checking out the same file from stash then the stash changes will overwrite the local changes. 
+  * git checkout stash-name -- file-name
+* remove last stash and apply the changes. Except when there is a merge conflict then git won't remove the stash
+  * git stash pop
+* remove the last stash
+  * git stash drop
+* remove nth stash
+  * git stash drop stash@{0}
+* remove all stash
+  * git stash clear
+* see what's in the stash
+  * git stash show stash@{0}
+* selectively stash changes
+  * git stash -p
