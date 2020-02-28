@@ -42,7 +42,5 @@ To quit:
   * git stash drop stash@{0}
 * remove all stash
   * git stash clear
-* see what's in the stash
-  * git stash show stash@{0}
 * selectively stash changes
   * git stash -p
